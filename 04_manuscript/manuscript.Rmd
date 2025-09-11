@@ -1,0 +1,29 @@
+---
+title: "Reproducible-Mini-Project"
+author: "Josh Abel-Nwachukwu"
+date: "2025-09-11"
+output: pdf_document
+bibliography: references.bib
+csl: ecology.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Introduction
+
+This is my manuscript. I am writing text in **Markdown** format.\
+Markdown makes formatting easy:
+
+-   *italics* with '*...*'
+
+-   **Bold"" with '**...\*\*\*'
+
+-   Lists with '-' or '1'\
+
+in text reference [@horst2020]
+
+#References
+
+@horst2020
