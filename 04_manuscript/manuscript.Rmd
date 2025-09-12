@@ -22,8 +22,6 @@ Markdown makes formatting easy:
 
 -   Lists with '-' or '1'\
 
-in text reference [@horst2020]
+I will be using the palmerpenguins package for my final reproducible mini-project. The palmerpenguins dataset is an openly available resource designed for data exploration and visualization, and it is frequently used in ecology education [@horst2020]. Previous ecological surveys at Palmer Station have documented penguin species distributions in the region [@gorman2014]. Morphological differences among penguins also carry important ecological significance [@gorman2020]. In this project, I will investigate whether penguin bill length differs by sex across species (Adelie, Chinstrap, and Gentoo). I hypothesize that bill length will differ significantly between males and females within species, and that the magnitude of this difference may vary among species.
 
-#References
-
-@horst2020
+**References**
