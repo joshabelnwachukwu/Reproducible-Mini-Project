@@ -2,6 +2,12 @@
 .Rhistory
 .Rapp.history
 
+# Ignore RStudio user-specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
 #Ds-Store Mac Default
 .DS_Store
 
