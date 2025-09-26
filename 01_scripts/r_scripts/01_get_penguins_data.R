@@ -1,3 +1,7 @@
+#Create reproducible data directories  
+dir.create("00_rawdata", showWarnings = FALSE, recursive = TRUE)
+dir.create("02_outdata", showWarnings = FALSE, recursive = TRUE)
+
 #Acquisition of palmer penguins data set and writing to CSV
 
 #Installation of palmer penguins package from CRAN (Compregensive R Archve Network)
