@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Reproducible Mini-Project - Penguin Bill Dimorphism
+# Reproducible Mini-Project - Penguin Bill Dimorphism 
 
 ## Purpose
 
