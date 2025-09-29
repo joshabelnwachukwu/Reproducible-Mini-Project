@@ -44,13 +44,11 @@ Ecology and Evolution course
 
 1.  Open `Reproducible-Mini-Project.Rproj` in RStudio.
 
-2.  Install the following packages and initialize the environment:
+2.  Install the necessary packages and initialize the environment:
 
     ```         
-    install.packages(c("palmerpenguins","tidyverse","janitor","broom","knitr"))
-    # optional but recommended:
-    # renv::init()
-    # renv::snapshot()
+    install.packages("renv")  
+    renv::restore()           # installs the packages listed in renv.lock life
     ```
 
 3.  Run scripts in order:
