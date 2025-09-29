@@ -48,7 +48,7 @@ Ecology and Evolution course
 
     ```         
     install.packages("renv")  
-    renv::restore()           # installs the packages listed in renv.lock life
+    renv::restore()           # installs the packages listed in renv.lock file
     ```
 
 3.  Run scripts in order:
