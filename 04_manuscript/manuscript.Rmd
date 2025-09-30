@@ -43,4 +43,8 @@ means %>%
 ```
 
 
-![Figure 1. Bill length by sex across Adelie, Chinstrap, and Gentoo penguins. Males generally exhibit longer bills than females, with the greatest differences
+![Figure 1. Bill length by sex across Adelie, Chinstrap, and Gentoo penguins. Males generally exhibit longer bills than females, with the greatest differences observed in Chinstrap penguins.](../03_figs/bill_length_by_sex_faceted_species.png){width="75%"}
+
+![Figure 2. Interaction plot showing mean bill length (±95% CI) by species and sex. The effect of sex on bill length varies among species, with Chinstrap penguins showing the largest difference between males and females](../03_figs/interaction_means_ci.png){width="75%"}
+
+**References**
