@@ -1,0 +1,78 @@
+---
+title           : "Sexual Dimorphism in Penguin Bill Length Across Species"
+shorttitle      : "Penguin Bill Dimorphism"
+date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+
+author: 
+  - name        : Joshua U. Abel-Nwachukwu
+    affiliation : 1
+
+affiliation:
+  - id          : 1
+    institution : University of British Columbia
+
+output: prereg::prereg_pdf
+bibliography: references.bib
+csl: ecology.csl
+---
+
+# Study Information
+
+## Title
+Sexual Dimorphism in Penguin Bill Length Across Species
+
+## Description
+
+Sexual dimorphism, or biological differences between males and females of the same species, is a widespread phenomenon with important implications for ecology, evolution, and biodiversity (Tsuji, 2020). In birds, sexual dimorphism in bill morphology often reflects ecological specialization, sexual selection, or niche differentiation between sexes (Bolnick, 2003; Temeles, 2010). In penguins, bill morphology is a key functional trait linked to foraging ecology, mate choice, and species recognition, making it an ideal trait for studying dimorphism (Gorman, 2014). The availability of high-quality field data in the form of the palmerpenguins dataset (Horst, 2020) provides an opportunity to quantify sexual dimorphism in penguins and test whether its magnitude varies across different species. The palmerpenguins dataset provides standardized morphometric data for Adelie, Chinstrap, and Gentoo penguins in the Palmer Archipelago, allowing direct comparison of bill length across sexes and species. By testing whether bill length differs consistently between male and female penguins across species, this study contributes to a broader understanding of how sexual dimorphism presents across organisms and how it may relate to ecological differentiation. More specifically, it asks whether dimorphism is uniform across closely related species or whether species-specific ecological pressures (e.g., diet, habitat) influence its magnitude.
+
+
+## Hypotheses
+
+I hypothesize that bill length is significantly different between males and females within species, and that the magnitude of this difference may vary among species
+
+## Study type
+
+Observational Study -  Secondary analysis of an existing, publicly available dataset (palmerpenguins).
+
+## Blinding
+
+No blinding is involved in this study.
+
+## Study design
+Cross-sectional design with a between-subjects comparison.
+## Randomization
+
+Not applicable (no experimental manipulation).
+
+## Explanation of existing data
+
+The palmerpenguins dataset was collected in the Palmer Archipelago (2007–2009) and released in a cleaned, teaching-friendly format (Horst et al., 2020; Gorman et al., 2014)
+
+## Data collection procedures
+
+Data were originally collected in the Palmer Archipelago, Antarctica, between 2007–2009. Field biologists measured bill length (in mm), sex, and species identity. For this preregistration, I will use the pre-cleaned dataset provided by the palmerpenguins R package.
+
+## Sample size
+
+n~= 300
+
+## Sample size rationale
+
+All eligible individuals will be included. Based on package documentation, this is expected to be approximately n ~= 300 total, with counts varying by species and sex.
+
+# Analysis Plan
+
+## Statistical models
+
+Primary confirmatory model:Two-way ANOVA with linear model
+
+# References
+> Bolnick, D. I., Svanbäck, R., Fordyce, J. A., Yang, L. H., Davis, J. M., Hulsey, C. D., & Forister, M. L. (2003). The ecology of individuals: Incidence and implications of individual specialization. *American Naturalist, 161*(1), 1–28. https://doi.org/10.1086/343878  
+
+> Gorman, K. B., Williams, T. D., & Fraser, W. R. (2014). Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus *Pygoscelis*). *PLoS ONE, 9*(3), e90081. https://doi.org/10.1371/journal.pone.0090081  
+
+> Horst, A. M., Hill, A. P., & Gorman, K. B. (2020). Palmerpenguins: Palmer Archipelago (Antarctica) penguin data. *R package version 0.1.0*. https://allisonhorst.github.io/palmerpenguins/  
+
+> Temeles, E. J., & Kress, W. J. (2010). Mate choice and sexual dimorphism in *Heliconia* hummingbirds: Ecological causation of sexual dimorphism. *Proceedings of the Royal Society B: Biological Sciences, 277*(1690), 2833–2840. https://doi.org/10.1098/rspb.2010.0666  
+
+> Tsuji, N. (2020). Sexual dimorphism and ecological correlates in birds: A comparative analysis. *Journal of Avian Biology, 51*(2), e02345. https://doi.org/10.1111/jav.02345  

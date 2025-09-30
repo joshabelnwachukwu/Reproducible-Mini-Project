@@ -1,0 +1,21 @@
+Shapiro-Wilk test of residual normality:
+
+	Shapiro-Wilk normality test
+
+data:  res
+W = 0.97122, p-value = 3.455e-06
+
+
+Levene-like check via SD by group (rule-of-thumb):
+# A tibble: 6 × 4
+# Groups:   species [3]
+  species   sex       sd     n
+  <fct>     <fct>  <dbl> <int>
+1 Adelie    female  2.03    73
+2 Adelie    male    2.28    73
+3 Chinstrap female  3.11    34
+4 Chinstrap male    1.56    34
+5 Gentoo    female  2.05    58
+6 Gentoo    male    2.72    61
+
+If assumptions look violated, report and add a robustness note (e.g., Welch ANOVA within species).

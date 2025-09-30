@@ -1,0 +1,46 @@
+---
+title: "Sexual Dimorphism in Penguin Bill Length Across Species"
+author: "Josh Abel-Nwachukwu"
+date: "2025-09-28"
+output: pdf_document
+bibliography: references.bib
+csl: ecology.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, message = FALSE, warning = FALSE,
+  fig.align = "center",
+  out.width = "75%"   #scale for  images
+)
+library(dplyr)
+library(knitr)
+
+```
+
+# **Introduction**
+
+Sexual dimorphism, or biological differences between males and females of the same species, is a widespread phenomenon with important implications for ecology, evolution, and biodiversity [@tsuji2020]. In birds, variation in bill morphology often reflects ecological specialization, sexual selection, or niche differentiation between sexes [@bolnick2003; @temeles2010]. Among penguins, bill morphology is a critical functional trait associated with foraging ecology, mate choice, and species recognition, making it a valuable feature for studying dimorphism [@gorman2014]. The palmerpenguins dataset [@horst2020] provides high-quality, standardized morphometric data for Adelie, Chinstrap, and Gentoo penguins from the Palmer Archipelago. These data allow for direct comparisons of bill length across sexes and species.
+
+This study examines whether bill length consistently differs between males and females, and whether the magnitude of dimorphism varies among closely related species, potentially reflecting species-specific ecological pressures (e.g., diet, habitat). I hypothesized that males would exhibit longer bills than females within each species, with the degree of dimorphism differing by species. Analysis of the palmerpenguins dataset supports this hypothesis: males generally possess longer bills than females, with Chinstrap penguins showing the greatest mean bill length (\~51 mm), followed by Gentoo penguins (\~49 mm), while Adelie males have much shorter bills on average (\~40 mm).
+
+# **Methods**
+
+The palmerpenguins dataset was collected in the Palmer Archipelago (2007–2009) and released in a cleaned, teaching-friendly format (Horst et al., 2020; Gorman et al., 2014). A Two-way ANOVA with linear model was used to compared bill length differences between males and females across species. Data was analyzed in Rstudio using mainly the tidyverse package
+
+# **Results**
+
+```{r}
+clean <- read.csv("../02_outdata/penguins_clean.csv")
+means <- read.csv("../02_outdata/group_means_ci.csv")
+
+
+
+means %>%
+  arrange(species, sex) %>%
+  knitr::kable(digits = 2,
+               caption = "Mean bill length (±95% CI) by species and sex")
+```
+
+
+![Figure 1. Bill length by sex across Adelie, Chinstrap, and Gentoo penguins. Males generally exhibit longer bills than females, with the greatest differences

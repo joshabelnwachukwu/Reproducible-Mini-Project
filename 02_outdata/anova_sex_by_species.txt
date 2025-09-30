@@ -1,0 +1,38 @@
+Two-way ANOVA: bill_length_mm ~ sex * species
+
+Analysis of Variance Table
+
+Response: bill_length_mm
+             Df Sum Sq Mean Sq  F value Pr(>F)    
+sex           1 1175.5  1175.5 219.2282 <2e-16 ***
+species       2 6975.6  3487.8 650.4786 <2e-16 ***
+sex:species   2   24.5    12.2   2.2841 0.1035    
+Residuals   327 1753.3     5.4                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Model summary:
+
+Call:
+lm(formula = bill_length_mm ~ sex * species, data = cleandata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7904 -1.3735 -0.0638  1.2096 11.4265 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               37.2575     0.2710 137.473  < 2e-16 ***
+sexmale                    3.1329     0.3833   8.174 6.64e-15 ***
+speciesChinstrap           9.3160     0.4808  19.377  < 2e-16 ***
+speciesGentoo              8.3063     0.4073  20.393  < 2e-16 ***
+sexmale:speciesChinstrap   1.3877     0.6799   2.041   0.0421 *  
+sexmale:speciesGentoo      0.7771     0.5721   1.358   0.1753    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.316 on 327 degrees of freedom
+Multiple R-squared:  0.8234,	Adjusted R-squared:  0.8207 
+F-statistic:   305 on 5 and 327 DF,  p-value: < 2.2e-16
+
