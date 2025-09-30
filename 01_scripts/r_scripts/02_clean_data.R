@@ -4,12 +4,11 @@ library(janitor)
 library(here)
 
 #set appropriate directories using here package
-infile  <- here("00_rawdata", "penguins.csv")
-outdir  <- here("02_outdata")
-outfile <- here("02_outdata", "penguins_clean.csv")
-dictcsv <- here("02_outdata", "penguins_data_dictionary.csv")
+infile  <- file.path("00_rawdata", "penguins_raw.csv")
+outdir  <- "02_outdata"
+outfile <- file.path(outdir, "penguins_clean.csv")
+dictcsv <- file.path(outdir, "penguins_data_dictionary.csv")
 
-#Create outdata directory
 dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
 
 #Start Cleaning Data

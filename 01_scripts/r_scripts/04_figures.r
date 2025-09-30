@@ -1,10 +1,10 @@
 library(tidyverse)
-library(here)
 
 #acess analysis scripts and set figure output directory
-clean_csv <- here("02_outdata", "penguins_clean.csv")
-means_csv <- here("02_outdata", "group_means_ci.csv")
-figdir    <- here("03_figs")
+clean_csv <- file.path("02_outdata", "penguins_clean.csv")
+means_csv <- file.path("02_outdata", "group_means_ci.csv")
+figdir    <- "03_figs"
+dir.create(figdir, showWarnings = FALSE, recursive = TRUE)
 
 #Output files for both plots
 p1_file <- file.path(figdir, "bill_length_by_sex_faceted_species.png")

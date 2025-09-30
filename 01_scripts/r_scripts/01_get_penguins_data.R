@@ -2,24 +2,23 @@
 dir.create("00_rawdata", showWarnings = FALSE, recursive = TRUE)
 dir.create("02_outdata", showWarnings = FALSE, recursive = TRUE)
 
-#Acquisition of palmer penguins data set and writing to CSV
+# Load palmerpenguins package
+library(palmerpenguins)
 
-#loading palmer penguins package for use
-library("palmerpenguins")
+# View datasets in palmerpenguins package
+data(package = "palmerpenguins")
 
-#View datasets in palmerpenguins package
-data(package = 'palmerpenguins')
-
-#View 'penguins' data (1/2 from palmerpenguins)
+# View 'penguins' data (1/2 from palmerpenguins)
 head(penguins)
-#Size measurements for adult foraging penguins near PalmerStation, Antarctica
+# Size measurements for adult foraging penguins near Palmer Station, Antarctica
 
-#View 'penguins_raw' data (2/2 from palmerpenguins)
+# View 'penguins_raw' data (2/2 from palmerpenguins)
 head(penguins_raw)
-#Penguin size, clutch, and blood isotope data for foraging adults near Palmer Station, Antarctica
+# Penguin size, clutch, and blood isotope data for foraging adults near Palmer Station, Antarctica
 
-#Write data to csv file
-library(here)
+# Ensure raw data folder exists
+dir.create("00_rawdata", showWarnings = FALSE, recursive = TRUE)
 
-#write penguins data into a csv in raw data folder
-write.csv(penguins, here("00_rawdata", "penguins.csv"), row.names = FALSE)
+# Write penguins data into a CSV in the raw data folder
+outfile <- file.path("00_rawdata", "penguins_raw.csv")
+write.csv(penguins, outfile, row.names = FALSE)
