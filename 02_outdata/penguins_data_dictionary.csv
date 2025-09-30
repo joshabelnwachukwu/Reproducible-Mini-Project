@@ -1,6 +1,0 @@
-"column","type","description"
-"species","factor","Adelie, Chinstrap, Gentoo"
-"island","factor","Island in Palmer Archipelago"
-"sex","factor","female, male"
-"year","integer","Year of sampling"
-"bill_length_mm","numeric","Culmen length (mm)"
